@@ -890,7 +890,7 @@ index 0000000000000000000000000000000000000000..d520a95838e121fbaaf344d9a93341c1
 +  emergency: 185,
 +};
 +
-+const PAYMENT_LINK = "https://example.com/payment"; // Replace with your live payment URL
++const PAYMENT_LINK = https:www.paypal.me/mtmg37;
 +
 +function formatCurrency(value) {
 +  return new Intl.NumberFormat("en-US", {
