@@ -1,9 +1,3 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/script.js b/script.js
-index 0119e5d21f7f9df1ad515ecc138b8869e7aa8b3c..6dc5e6359b8537918da1225e6bcb1c7163bec16c 100644
---- a/script.js
-+++ b/script.js
-@@ -1,1019 +1,68 @@
 -+  const FALLBACK_STYLE_ID = "fallback-styles-inline";
 -+  const FALLBACK_CSS = `:root {
 -+  --bg: #0f172a;
@@ -1091,6 +1085,3 @@ index 0119e5d21f7f9df1ad515ecc138b8869e7aa8b3c..6dc5e6359b8537918da1225e6bcb1c71
 +    });
 +  }
 +})();
- 
-EOF
-)
