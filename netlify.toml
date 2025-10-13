@@ -2,7 +2,7 @@
 +  publish = "."
 +
 +[dev]
-+  framework = "#static"
++  command = ""
 +  publish = "."
 +  port = 8888
-+  staticServerPort = 3999
++  targetPort = 3999
