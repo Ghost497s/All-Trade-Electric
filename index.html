@@ -52,6 +52,7 @@
                 <!-- Desktop Menu -->
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
                     <a href="#services" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                    <a href="#projects" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
                     <a href="#process" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Our Process</a>
                     <a href="#reviews" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Reviews</a>
                     <a href="#contact" class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition duration-300 shadow-md">Request Service</a>
@@ -74,6 +75,7 @@
         <div class="sm:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
                 <a href="#process" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Process</a>
                 <a href="#reviews" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reviews</a>
                 <a href="#contact" class="bg-primary text-white block px-3 py-2 rounded-md text-base font-medium">Request Service</a>
@@ -173,8 +175,146 @@
         </div>
     </section>
 
+    <!-- Projects Gallery Section -->
+    <section id="projects" class="py-16 md:py-24 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-dark inline-block section-header border-primary">
+                    Recent Project Gallery
+                </h2>
+                <p class="mt-4 text-xl text-gray-600">
+                    Quality results speak for themselves. Check out some of our recent work across South Florida.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Project Item 1: Replace src with your image URL -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-[1.02] cursor-pointer">
+                    <img src="https://placehold.co/600x400/0a6ebd/ffffff?text=Commercial+Panel" 
+                         alt="Commercial Electrical Panel Upgrade" 
+                         class="w-full h-full object-cover aspect-[3/2] transition duration-500 group-hover:opacity-80"/>
+                    <div class="absolute inset-0 bg-dark bg-opacity-40 flex items-end opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="p-4 text-white font-semibold text-sm">Commercial Panel Upgrade (Miami)</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 2: Replace src with your image URL -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-[1.02] cursor-pointer">
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=Residential+Rewire" 
+                         alt="Residential Home Rewiring Project" 
+                         class="w-full h-full object-cover aspect-[3/2] transition duration-500 group-hover:opacity-80"/>
+                    <div class="absolute inset-0 bg-dark bg-opacity-40 flex items-end opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="p-4 text-white font-semibold text-sm">Full Residential Rewire (Broward)</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 3: Replace src with your image URL -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-[1.02] cursor-pointer">
+                    <img src="https://placehold.co/600x400/0a6ebd/ffffff?text=Custom+Lighting" 
+                         alt="Exterior Landscape Lighting Installation" 
+                         class="w-full h-full object-cover aspect-[3/2] transition duration-500 group-hover:opacity-80"/>
+                    <div class="absolute inset-0 bg-dark bg-opacity-40 flex items-end opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="p-4 text-white font-semibold text-sm">Architectural & Landscape Lighting</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 4: Replace src with your image URL -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-[1.02] cursor-pointer">
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=Generator+Install" 
+                         alt="Standby Generator Installation" 
+                         class="w-full h-full object-cover aspect-[3/2] transition duration-500 group-hover:opacity-80"/>
+                    <div class="absolute inset-0 bg-dark bg-opacity-40 flex items-end opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="p-4 text-white font-semibold text-sm">Whole-House Generator Install</p>
+                    </div>
+                </div>
+                
+                <!-- Project Item 5: Replace src with your image URL -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-[1.02] cursor-pointer hidden md:block">
+                    <img src="https://placehold.co/600x400/0a6ebd/ffffff?text=EV+Charger" 
+                         alt="Electric Vehicle Charger Installation" 
+                         class="w-full h-full object-cover aspect-[3/2] transition duration-500 group-hover:opacity-80"/>
+                    <div class="absolute inset-0 bg-dark bg-opacity-40 flex items-end opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="p-4 text-white font-semibold text-sm">Level 2 EV Charger Installation</p>
+                    </div>
+                </div>
+
+                 <!-- Project Item 6: Replace src with your image URL -->
+                <div class="group relative overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transform transition duration-500 hover:scale-[1.02] cursor-pointer hidden md:block">
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=Troubleshooting" 
+                         alt="Infrared Diagnostic Scan" 
+                         class="w-full h-full object-cover aspect-[3/2] transition duration-500 group-hover:opacity-80"/>
+                    <div class="absolute inset-0 bg-dark bg-opacity-40 flex items-end opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="p-4 text-white font-semibold text-sm">Troubleshooting & Diagnostics</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                 <a href="#contact" class="bg-primary text-white font-semibold py-3 px-8 rounded-lg shadow-xl hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    Discuss Your Next Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section - UPDATED TO INCLUDE RATING DISPLAY AND LIVE LINK -->
+    <section id="reviews" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-dark inline-block section-header">
+                    Trusted by South Florida Clients
+                </h2>
+                <div class="mt-8 flex flex-col items-center justify-center space-y-3">
+                    <!-- Static Star Rating Display (4.9 out of 5) - Manually update the number 4.9 and 155 below -->
+                    <div class="flex text-yellow-500 space-x-1">
+                        <!-- Full Stars -->
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    
+                    <p class="text-3xl font-bold text-dark">
+                        4.9 Stars <span class="text-lg font-normal text-gray-500">(155 Google Reviews)</span>
+                    </p>
+
+                    <!-- Link to Live Reviews (Placeholder link - REPLACE with your actual Google Business Profile URL) -->
+                    <a href="https://www.google.com/search?q=All+Trade+Electric+Inc&amp;hl=en&amp;gl=US&amp;authuser=0&amp;sxsrf=APwXEdeXqj4kQ7v4D8M-wzB-b-sYw2N_rA:1687114170703&amp;tbm=lcl&amp;ei=oTqYZL7wO8yVptYP-M6Q2A0&amp;ved=0ahUKEwjG_f_O-rP_AhUMSkIHHejnBNgQ4dUDCAk&amp;uact=5&amp;oq=All+Trade+Electric+Inc&amp;gs_lp=EgZnd3Mtd2l6IhZBbGwgVHJhZGUgRWxlY3RyaWMgSW5jMgQQABgeMgQQABgeMgQQABgeMgQQABgeMgQQABgeMgQQABgeMgQQABgeMgQQABgeMgQQABgeMgQQABgeSABYAHAAYACeAHkAQE&amp;sclient=gws-wiz#lrd=0x889a7f34c56d77e1:0x4d6c4e0b043b3b27,1," target="_blank" class="text-sm font-medium text-white bg-green-600 hover:bg-green-700 transition duration-300 px-5 py-3 rounded-full shadow-lg mt-4 flex items-center transform hover:scale-[1.02]">
+                        <!-- Google Icon SVG (simple G) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 48 48"><path fill="#fbc02d" d="M43.6 20.4H24v7.7h11.7c-.5 3.3-2.9 6.2-6.5 8.1l.6.6v.5h.5c6.7-5.9 10.7-14.7 10.7-23.9 0-.9-.1-1.7-.3-2.6z"/><path fill="#e53935" d="M24 44c6.8 0 12.6-2.2 16.8-6.1l-6.5-5.1c-1.8 1.2-4.1 1.9-6.9 1.9-5.3 0-9.8-3.5-11.4-8.3l-.4.3v.5c0 4.8 3.9 8.7 8.7 8.7z"/><path fill="#4caf50" d="M12.6 27.5c-.3-1-.5-2-.5-3.1s.2-2.1.5-3.1l-.5-.4v-.5h-.5c-3.1 5.9-3.1 12.8 0 18.7l.5-.5z"/><path fill="#1565c0" d="M24 16.3c3.1 0 5.9 1.1 8.1 3.2l5.7-5.7c-4.4-4.2-10.4-6.8-16.7-6.8-7.5 0-14 3.7-18.1 9.7l6.3 4.9c1.6-4.8 6.1-8.3 11.4-8.3z"/></svg>
+                        Verify Our 4.9 Star Rating on Google
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-lg flex flex-col justify-between">
+                    <p class="italic text-gray-700 mb-6">
+                        "All Trade Electric handled our major office build-out flawlessly. The crew was punctual, tidy, and kept our timeline on track, even with last-minute design changes. Exceptional communication."
+                    </p>
+                    <div class="font-semibold text-primary">— Melissa R., Property Manager</div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-lg flex flex-col justify-between">
+                    <p class="italic text-gray-700 mb-6">
+                        "They diagnosed a complex panel issue within minutes and had power back on before the sun went down. Professional, courteous, and fairly priced. True 24/7 service."
+                    </p>
+                    <div class="font-semibold text-primary">— Javier H., Homeowner (Miami-Dade)</div>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-lg flex flex-col justify-between">
+                    <p class="italic text-gray-700 mb-6">
+                        "The custom restaurant lighting design gets compliments every night. All Trade Electric Inc. translated our vision into a stunning, code-compliant setup with smart controls."
+                    </p>
+                    <div class="font-semibold text-primary">— Dana P., Restaurateur (Broward County)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Our Process Section -->
-    <section id="process" class="py-16 md:py-24 bg-secondary">
+    <section id="process" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-extrabold text-dark inline-block section-header">
@@ -242,43 +382,6 @@
                         <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shadow-lg ring-4 ring-white">4</div>
                     </div>
                     <div class="w-full lg:w-1/2 lg:pr-20 lg:order-1"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="reviews" class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold text-dark inline-block section-header">
-                    Trusted by South Florida
-                </h2>
-                <p class="mt-4 text-xl text-gray-600">
-                    What our residential and commercial clients say.
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="bg-secondary p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                    <p class="italic text-gray-700 mb-6">
-                        "All Trade Electric handled our major office build-out flawlessly. The crew was punctual, tidy, and kept our timeline on track, even with last-minute design changes. Exceptional communication."
-                    </p>
-                    <div class="font-semibold text-primary">— Melissa R., Property Manager</div>
-                </div>
-                <!-- Review 2 -->
-                <div class="bg-secondary p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                    <p class="italic text-gray-700 mb-6">
-                        "They diagnosed a complex panel issue within minutes and had power back on before the sun went down. Professional, courteous, and fairly priced. True 24/7 service."
-                    </p>
-                    <div class="font-semibold text-primary">— Javier H., Homeowner (Miami-Dade)</div>
-                </div>
-                <!-- Review 3 -->
-                <div class="bg-secondary p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                    <p class="italic text-gray-700 mb-6">
-                        "The custom restaurant lighting design gets compliments every night. All Trade Electric Inc. translated our vision into a stunning, code-compliant setup with smart controls."
-                    </p>
-                    <div class="font-semibold text-primary">— Dana P., Restaurateur (Broward County)</div>
                 </div>
             </div>
         </div>
@@ -358,6 +461,7 @@
                     <h4 class="text-white font-semibold mb-3">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#services" class="hover:text-primary transition duration-150">Services</a></li>
+                        <li><a href="#projects" class="hover:text-primary transition duration-150">Projects</a></li>
                         <li><a href="#process" class="hover:text-primary transition duration-150">Our Process</a></li>
                         <li><a href="#reviews" class="hover:text-primary transition duration-150">Reviews</a></li>
                     </ul>
