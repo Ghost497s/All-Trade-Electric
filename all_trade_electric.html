@@ -296,8 +296,15 @@
                 </p>
             </div>
 
-            <!-- Simple Contact Form (Action is placeholder - replace with your Netlify/Formspree endpoint) -->
-            <form action="#" method="POST" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl">
+            <!-- Netlify Form Integration -->
+            <!-- The 'data-netlify="true"' and 'netlify-honeypot' attributes ensure Netlify handles form submissions -->
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl">
+                <!-- Hidden fields required by Netlify -->
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </div>
+
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
                     <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border border-gray-600 rounded-lg shadow-sm focus:ring-primary focus:border-primary bg-gray-700 text-white">
