@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Trade Electric | Project Photo Gallery</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0a6ebd', // Deep Electric Blue
+                        'secondary': '#f9fafb', // Light Gray Background
+                        'dark': '#1f2937', // Dark Gray for text/nav
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensures smooth scroll to the booking section */
+        html {
+            scroll-behavior: smooth;
+        }
+        .gallery-image-container {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .section-header {
+            border-bottom: 3px solid #0a6ebd;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-secondary">
+
+    <!-- Navigation Header -->
+    <nav class="bg-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Brand Name with Red Accent -->
+                    <a href="all_trade_electric.html" class="flex items-center text-red-500 text-2xl font-extrabold tracking-wide"> 
+                        All Trade Electric
+                    </a>
+                </div>
+                
+                <div class="flex items-center space-x-6">
+                    <a href="all_trade_electric.html" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm font-medium">← Back to Home</a>
+                    <a href="#contact-booking" class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition duration-300 shadow-md">Schedule Service Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Main Section -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-dark section-header">
+                Project Showcase: Quality In Action
+            </h1>
+            <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                Take a closer look at the precision and quality we deliver on every residential and commercial job across South Florida.
+            </p>
+        </div>
+
+        <!-- Responsive Photo Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Gallery Item 1: Commercial Panel -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-image-container">
+                <img src="https://placehold.co/800x600/1f2937/ffffff?text=Commercial+Electrical+Panel" alt="Clean installation of a new commercial electrical panel" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-primary">Large Scale Panel Upgrade</h3>
+                    <p class="text-sm text-gray-600">Miami Office Complex</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2: Recessed Lighting -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-image-container">
+                <img src="https://placehold.co/800x600/0a6ebd/ffffff?text=Residential+Recessed+Lighting" alt="Installation of modern residential recessed lighting" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-primary">Residential Lighting Retrofit</h3>
+                    <p class="text-sm text-gray-600">Broward County Home</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3: Generator Pad -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-image-container">
+                <img src="https://placehold.co/800x600/1f2937/ffffff?text=Standby+Generator+Installation" alt="Standby generator being installed on a concrete pad" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-primary">Whole Home Generator Install</h3>
+                    <p class="text-sm text-gray-600">Hurricane Preparedness Solution</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4: Clean Conduit Run -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-image-container">
+                <img src="https://placehold.co/800x600/0a6ebd/ffffff?text=Clean+Conduit+Run" alt="Perfectly bent and installed electrical conduit run in a building" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-primary">Structured Conduit Wiring</h3>
+                    <p class="text-sm text-gray-600">Warehouse Fit-Out</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5: EV Charger -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-image-container">
+                <img src="https://placehold.co/800x600/1f2937/ffffff?text=Electric+Vehicle+Charger+Installation" alt="Electric vehicle charger installed in a residential garage" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-primary">EV Charger Installation</h3>
+                    <p class="text-sm text-gray-600">Home Charging Solutions</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6: Safety Tagging -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-image-container">
+                <img src="https://placehold.co/800x600/0a6ebd/ffffff?text=Safety+and+Labeling" alt="Close up of neat, labeled wiring inside an electrical box" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-primary">Safety & Code Compliance</h3>
+                    <p class="text-sm text-gray-600">Inspection Readiness</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Call to Action below gallery -->
+        <div class="text-center mt-16">
+            <h2 class="text-3xl font-bold text-dark mb-4">Ready to Start Your Project?</h2>
+            <p class="text-lg text-gray-600 mb-6">If you like what you see, scroll down to schedule a consultation with our licensed team.</p>
+            <a href="#contact-booking" class="bg-red-500 text-white font-semibold py-3 px-10 rounded-lg shadow-xl hover:bg-red-600 transition duration-300 transform hover:scale-105">
+                Book Service Today
+            </a>
+        </div>
+    </main>
+
+    <!-- Booking Option Section (At the very bottom) -->
+    <section id="contact-booking" class="py-16 bg-dark text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-white">Project Consultation Form</h2>
+                <p class="mt-2 text-lg text-gray-300">Let's discuss the details of your commercial or residential needs.</p>
+            </div>
+
+            <form action="#" method="POST" onsubmit="handleGalleryBooking(event)" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border-gray-600 rounded-lg shadow-sm focus:ring-primary focus:border-primary bg-gray-700 text-white">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-300">Phone</label>
+                    <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-4 py-3 border-gray-600 rounded-lg shadow-sm focus:ring-primary focus:border-primary bg-gray-700 text-white">
+                </div>
+                <div>
+                    <label for="details" class="block text-sm font-medium text-gray-300">Project Details / Message</label>
+                    <textarea id="details" name="details" rows="4" required class="mt-1 block w-full px-4 py-3 border-gray-600 rounded-lg shadow-sm focus:ring-primary focus:border-primary bg-gray-700 text-white"></textarea>
+                </div>
+                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-primary hover:bg-blue-700 transition duration-300">
+                    Submit Request
+                </button>
+            </form>
+
+            <!-- Confirmation Message Box -->
+            <div id="gallery-confirmation-message" class="mt-8 hidden bg-green-900 border-l-4 border-green-500 text-green-300 p-4 rounded-lg" role="alert">
+                <p class="font-bold">Success!</p>
+                <p>Your booking request has been received. A team member will contact you shortly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-4">
+        <p class="text-sm">&copy; 2025 All Trade Electric Inc. | Licensed Contractor: EC13012345</p>
+    </footer>
+
+    <!-- JavaScript for Form Handling (Prevents alert()) -->
+    <script>
+        function handleGalleryBooking(event) {
+            event.preventDefault(); // Stop the form from submitting normally
+
+            // Simulate form data processing
+            console.log("Gallery Booking Request Submitted");
+
+            // Clear the form fields
+            document.getElementById('name').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('details').value = '';
+
+            // Show the confirmation message box
+            const confirmationBox = document.getElementById('gallery-confirmation-message');
+            confirmationBox.classList.remove('hidden');
+
+            // Hide the confirmation box after 6 seconds
+            setTimeout(() => {
+                confirmationBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+
+</body>
+</html>
